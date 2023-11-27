@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight{
+  color: #00ff29;
+}
+
+.animated-icon {
+  transition: transform 0.3s ease;
+  animation: moveLeftAndRight 1s infinite alternate; 
+}
+
+@keyframes moveLeftAndRight {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
